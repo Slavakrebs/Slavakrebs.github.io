@@ -16,11 +16,11 @@
 
 <script>
 
-alert("test);
 var hrefLink = "controlsmart://";
 
 var qryParam = new URL(window.location.href).searchParams.get('link');
-console.log(qryParam)
+console.log(window.location.href)
+  
 if(qryParam){
 
   hrefLink=window.atob(qryParam);
