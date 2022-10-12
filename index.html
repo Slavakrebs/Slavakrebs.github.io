@@ -19,8 +19,7 @@
 
 var hrefLink = "controlsmart://";
  
-console.log("window.location.href");  
-console.log(window.location.href);
+
   
 var qryParam = new URL(window.location.href).searchParams.get('link');
   
@@ -29,11 +28,11 @@ var qryParam = new URL(window.location.href).searchParams.get('link');
 if(qryParam){
 
   hrefLink+=qryParam;
-  //hrefLink=window.atob(qryParam);
+  //hrefLink=atob(qryParam);
 
 };
-
-console.log(window.location.href);
+console.log("hrefLink");
+console.log(hrefLink);
 
 window.location.href = hrefLink;
  
