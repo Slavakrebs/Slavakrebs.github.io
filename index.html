@@ -16,13 +16,15 @@
 
 <script>
 
-console.log("qryParam");
-var hrefLink = "controlsmart://";
 
+var hrefLink = "controlsmart://";
+ 
+console.log("window.location.href");  
+console.log(window.location.href);
+  
 var qryParam = new URL(window.location.href).searchParams.get('link');
   
-console.log("qryParam");
-console.log(qryParam);
+
 
 if(qryParam){
 
@@ -30,7 +32,7 @@ if(qryParam){
 
 }
 
- console.log(hrefLink);
+console.log(window.location.href);
 
 window.location.href = hrefLink;
 
