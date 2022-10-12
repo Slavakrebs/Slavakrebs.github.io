@@ -28,13 +28,17 @@ var qryParam = new URL(window.location.href).searchParams.get('link');
 
 if(qryParam){
 
+  //hrefLink=window.atob(qryParam);
   hrefLink=window.atob(qryParam);
 
 }
 
 console.log(window.location.href);
 
-window.location.href = hrefLink;
+//window.location.href = hrefLink;
+ 
+window.location.href= "controlsmart://"+"001e001401000100000003e81414000000030000000201013c0a00010a087f2684";
+  
 
 </script>
 
